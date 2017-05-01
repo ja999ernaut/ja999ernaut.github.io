@@ -1,0 +1,472 @@
+*,
+*:after,
+*::before {
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;  
+}
+
+body {
+    font-size: 18px;
+    color: #536B64;
+    font-family: 'Cuprum', sans-serif;   
+}
+
+header{
+    background: fixed #A7D6C9 url(../image/forest3.jpg) center center no-repeat;
+    width: 100%;
+    height: 100vh;
+    padding: 50px 110px;
+}
+
+.bar a{
+    color: #536B64;
+    display: block;
+    border: 5px solid #536B64;
+    background-color: transparent;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin: 0 auto 10px;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-duration: 3.5s;
+            animation-duration: 3.5s;   
+}
+.bar a:hover{
+    background-color: #536B64;
+    color: #A7D6C9;
+    border-color: #A7D6C9;
+}
+.bar {
+    padding-left: 0;
+       
+}
+.main_title .bar:last-child{
+    padding-right: 0;
+}
+.title_name{
+    position: relative;
+    margin: 0;
+    height: 77.5vh;
+    width: 100%;
+    
+}
+.main_bar{
+    width: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    padding: 20px 0;
+    color: #536B64;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    letter-spacing: 6px;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+}
+
+.section_name{
+    font-size: 30px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 5px solid #536B64;
+}
+
+.section {
+    margin: 5% 0;
+    width: 100%;
+    padding: 0;
+}
+
+.wrapper{
+    margin: 0;
+}
+
+.profile{
+    padding: 50px 110px;
+    background-image: url(../image/pattern.png);
+    height: 100vh;
+    width: 100%;
+}
+
+.profile .photo{
+    text-align: center;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+}
+
+.profile .photo img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 35px;
+}
+
+.profile .photo hr{
+    margin: 15px auto;
+    width: 47%;
+    background-color: #536B64;
+    height: 3px;
+    border: 0;
+}
+
+.profile .photo a  {
+    color: #536B64;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+.profile .photo .fa{
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #536B64;
+    color: #A7D6C9;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.profile .photo .fa:hover {
+    color: #536B64;
+    background-color: #A7D6C9;
+    border: 3px solid #536B64;
+}
+
+.profile .details{
+    font-size: 18px;
+    line-height: 32px;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+}
+
+.profile .details h2,
+.profile .details p{
+    margin-top: 25px;
+}
+
+.profile .details p{
+    letter-spacing: 2px;
+}
+
+.skills{
+    background: fixed #A7D6C9 url(../image/forest.jpg) center center no-repeat;
+    position: relative;
+    padding: 50px 110px;
+    width: 100%;
+    height: 100vh;
+}
+
+.scaleSkillbar {
+    height: 50px;
+    position: relative;
+    background: rgba(83,107,100, 0.5);
+    margin: 20px 0;
+    border-radius: 50px;
+}
+.scaleSkillbar:first-child{
+    margin: 0;   
+}
+
+.PercentText,
+.scaleSkillArea { 
+    margin-top: 13px;
+    font-family: "Cuprum", sans-serif;
+    font-size: 20px;
+}
+.scaleSkillArea {
+    z-index: 3;
+    position: absolute;
+    float: left;
+    margin-left: 20px;
+    color: #536B64;      
+}
+.PercentText {
+    z-index: 1;
+    position: relative;
+    margin-right: 20px;
+    float: right; 
+    color: #536B64;  
+}
+.codedeco {
+    height: 50px;
+    position: absolute;
+    background-color: #A7D6C9;
+    border-radius: 50px;
+}
+
+.works{
+    padding: 50px 110px;
+    background-image: url(../image/pattern.png);
+    height: 100vh;
+    width: 100%;
+}
+
+.portfolio_item {
+    padding: 0;
+}
+
+.portfolio_item img {
+    width: 100%;
+}
+
+.portfolio_item .port_item_cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(83,107,100, 0.7);
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.portfolio_item:hover .port_item_cont {
+    opacity: 1;
+    padding: 26%;
+}
+
+.port_item_cont a {
+    background-color: transparent;
+    border: #A7D6C9 3px solid;
+    color: #A7D6C9;
+    font-size: 28px;
+    padding: 2px 10px;
+    display: inline-block;  
+}
+
+.podrt_descr {
+    background-color: #fff;
+    max-width: 500px;
+    margin: auto;
+}
+
+.podrt_descr p,
+.podrt_descr h3 {
+    color: #536B64;
+    text-align: center;
+    padding: 10px;
+    
+}
+.podrt_descr h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.podrt_descr img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.modal-box-content {
+    position: relative;
+}
+
+.modal-box-content .mfp-close {
+    color: #536B64;
+}
+
+.contact{
+    background: fixed url(../image/forest2.jpg) center center no-repeat;
+    color: #536B64;
+    position: relative;
+    padding: 50px 110px;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact form input[type=text],
+.contact form textarea{
+    background-color: transparent;
+    width: 100%;
+    padding: 5px 0;
+    color: #536B64;
+    font-size: 20px;
+    text-indent: 5px;
+    border: none;
+    border-bottom: 3px solid #536B64;
+    outline: none;
+}
+
+.contact form textarea{
+    resize: none;
+    height: 150px;
+}
+
+.contact form input[type=submit] {
+    color: #536B64;
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 50px;
+    border: 3px solid #536B64;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    width: auto;
+    padding: 5px 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contact input[type=submit]:hover {
+    background-color: #536B64;
+    color: #A7D6C9;
+    border-color: #A7D6C9;
+}
+.contact_info {
+    color: #536B64;
+    padding: 0;
+    margin: 40px 0;    
+}
+
+.contact_info h2{
+    margin: 0 0 40px 0 ;
+}
+
+.contact_info i{
+    font-size: 30px;
+    -webkit-animation-iteration-count: 2;
+            animation-iteration-count: 2;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+}
+
+.contact_info p{
+    letter-spacing: 5px;
+}
+
+.contact_info a{
+    color: #536B64;
+    font-size: 25px;
+}
+
+.contact_me {
+    padding: 0;
+    margin: 40px 0;    
+}
+
+
+.scrollup{
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    text-indent: -9999px;
+    background: url("../image/icon_top.png") no-repeat;
+}
+
+@media (max-width: 992px){
+    header,
+    .contact,
+    .profile,
+    .skills,
+    .works{
+        padding: 40px 90px;
+        height: 100%;
+    }
+    
+    .main_title .bar:nth-child(even){
+       padding-right: 0;
+    }
+    
+    .scrollup{
+        bottom:30px;
+        right:30px;
+    }
+    
+}
+
+@media (max-width: 768px){
+    header,
+    .contact,
+    .profile,
+    .skills,
+    .works{
+        padding: 30px 70px;
+    }
+    
+    .main_title .bar:nth-child(odd){
+       padding-right: 0;
+    }
+    
+    .title_name .main_bar{
+        width: 70%;
+        letter-spacing: 2px;
+    }
+
+    .contact_info p{
+        letter-spacing: 4px;
+        text-align: center;
+    }
+    .contact_info i,
+    .contact_info a{
+        font-size: 24px;
+    }
+
+    .scrollup{
+        bottom:20px;
+        right:20px;
+    }
+    
+}
+
+@media (max-width: 480px){
+    header,
+    .contact,
+    .profile,
+    .skills,
+    .works{
+        padding: 20px 50px;
+    }
+    header{
+        height: 100vh;
+    }
+    
+    .main_title {
+        position: absolute;
+        width: 70%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        top: 48%;
+        left: 50%;
+    }
+
+    .bar a{
+        -webkit-animation-delay: 3s;
+                animation-delay: 3s;
+        -webkit-animation-duration: 3s;
+                animation-duration: 3s;   
+    }
+    
+    .title_name{
+        display: none;
+    }
+
+    .contact_info p{
+        letter-spacing: 3px;
+    }
+    .contact_info i,
+    .contact_info a{
+        font-size: 18px;
+    }
+    
+    .scrollup{
+        bottom:10px;
+        right:10px;
+    }
+
+}
